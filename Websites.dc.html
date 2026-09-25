@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website erstellen lassen – ab 1.500 € | Dravent</title>
+<meta name="description" content="Individuelles Webdesign, schnelle Ladezeiten und Nutzerführung, die Anfragen bringt. Erster Entwurf in 48 Std., live in 7–14 Tagen.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&amp;display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#06070B;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+a{color:inherit}
+a:hover{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+::selection{background:rgba(61,123,255,.35)}
+p{margin:0}
+</style>
+</helmet>
+<div data-dr-root="" lang="de" style="--bg:#06070B;--bg-elevated:#0B0D13;--surface:#11141C;--surface-hover:#161A24;--border:rgba(255,255,255,.08);--border-strong:rgba(255,255,255,.16);--text:#F2F4F8;--text-muted:#9AA3B2;--text-subtle:#6B7280;--primary:#3D7BFF;--primary-hover:#5A8FFF;--primary-solid:#2F6BF5;--primary-solid-hover:#245CDB;--accent:#2EE6C5;--accent-text:#2EE6C5;--glass:rgba(6,7,11,.8);--grid:rgba(255,255,255,.055);--spot:rgba(61,123,255,.11);--bar:rgba(255,255,255,.07);--bar-strong:rgba(255,255,255,.14);--glow:inset 0 1px 0 rgba(255,255,255,.06);--shadow-pop:0 24px 60px -24px rgba(0,0,0,.6);position:relative;min-height:100vh;background:var(--bg);color:var(--text);font-family:Geist, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;font-size:17px;line-height:1.65;overflow-x:clip;transition:background-color .2s, color .2s">
+
+<svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs>
+<linearGradient id="dr-grad" gradientUnits="userSpaceOnUse" x1="4" y1="28" x2="28" y2="4"><stop offset="0" style="stop-color:var(--primary)"></stop><stop offset="1" style="stop-color:var(--accent)"></stop></linearGradient>
+</defs></svg>
+
+<a href="#main" style="position:fixed;left:-9999px;top:12px;z-index:200;padding:12px 18px;border-radius:8px;background:var(--surface);color:var(--text);font-weight:500;text-decoration:none" style-focus="left:16px">Zum Inhalt springen</a>
+
+<sc-if value="{{ grain }}" hint-placeholder-val="{{ true }}">
+<div aria-hidden="true" style="position:fixed;inset:0;z-index:90;pointer-events:none;opacity:.035;background-image:url(&quot;data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'&gt;&lt;filter id='n'&gt;&lt;feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/&gt;&lt;/filter&gt;&lt;rect width='100%25' height='100%25' filter='url(%23n)'/&gt;&lt;/svg&gt;&quot;)"></div>
+</sc-if>
+
+<header data-hdr="" style="position:fixed;top:0;left:0;right:0;z-index:50;border-bottom:1px solid transparent;transition:transform .35s cubic-bezier(.22,1,.36,1), background-color .25s, border-color .25s">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="Dravent%20Startseite.dc.html" data-logo="" aria-label="Dravent – zur Startseite" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" style="overflow:visible"><path d="M7 5V27H14A11 11 0 0 0 24.34 12.24" stroke="url(#dr-grad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 5H12.5" stroke="url(#dr-grad)" stroke-width="2.6" stroke-linecap="round"></path><path data-logo-arrow="" d="M15.5 16.5L26 6M20.5 6H26V11.5" stroke="url(#dr-grad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      <span style="display:flex;align-items:baseline;font:600 21px/1 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:.04em">DR<span style="display:inline-block;transform:scaleY(-1) translateY(-.02em)">V</span>VENT</span>
+    </a>
+    <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+      <nav aria-label="Hauptnavigation" style="display:flex;align-items:center;gap:36px;font-size:15px;font-weight:500">
+        <a href="Websites.dc.html" aria-current="page" style="position:relative;text-decoration:none;color:var(--text)">Websites<span aria-hidden="true" style="position:absolute;left:50%;bottom:-10px;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:var(--accent)"></span></a>
+        <a href="Google%20Ads.dc.html" style="text-decoration:none;color:var(--text-muted);transition:color .2s" style-hover="color:var(--text)">Google Ads</a>
+        <a href="Dravent%20Startseite.dc.html#arbeiten" style="text-decoration:none;color:var(--text-muted);transition:color .2s" style-hover="color:var(--text)">Referenzen</a>
+        <a href="Dravent%20Startseite.dc.html#team" style="text-decoration:none;color:var(--text-muted);transition:color .2s" style-hover="color:var(--text)">Über uns</a>
+      </nav>
+    </sc-if>
+    <div style="display:flex;align-items:center;gap:10px">
+      <button type="button" aria-label="Farbmodus wechseln" onClick="{{ toggleTheme }}" style="width:44px;height:44px;display:grid;place-items:center;border-radius:999px;border:1px solid var(--border);background:transparent;color:var(--text-muted);cursor:pointer;transition:color .2s, border-color .2s" style-hover="color:var(--text);border-color:var(--border-strong)">
+        <sc-if value="{{ isDark }}" hint-placeholder-val="{{ true }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg></sc-if>
+        <sc-if value="{{ isLight }}" hint-placeholder-val="{{ false }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></sc-if>
+      </button>
+      <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+        <a href="#kontakt" data-btn="" data-magnetic="" style="display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 18px 0 20px;border-radius:999px;background:var(--primary-solid);color:#fff;font:500 15px/1 Geist, ui-sans-serif, system-ui, sans-serif;text-decoration:none;white-space:nowrap;transition:transform .25s cubic-bezier(.22,1,.36,1), background-color .2s" style-hover="background:var(--primary-solid-hover);color:#fff">Erstgespräch<span data-arrow="" style="display:flex;transition:transform .2s cubic-bezier(.22,1,.36,1)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
+      </sc-if>
+      <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+        <button type="button" aria-label="Menü öffnen" aria-expanded="{{ menuAria }}" onClick="{{ openMenu }}" style="width:44px;height:44px;display:grid;place-items:center;border-radius:999px;border:1px solid var(--border-strong);background:transparent;color:var(--text);cursor:pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"></path></svg></button>
+      </sc-if>
+    </div>
+  </div>
+</header>
+
+<sc-if value="{{ menu }}" hint-placeholder-val="{{ false }}">
+  <div role="dialog" aria-modal="true" aria-label="Menü" style="position:fixed;inset:0;z-index:80;background:var(--bg);display:flex;flex-direction:column;padding:0 20px 28px">
+    <div style="height:76px;display:flex;align-items:center;justify-content:space-between">
+      <span style="font:600 21px/1 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:.04em;display:flex;align-items:baseline">DR<span style="display:inline-block;transform:scaleY(-1) translateY(-.02em)">V</span>VENT</span>
+      <button type="button" data-menu-close="" aria-label="Menü schließen" onClick="{{ closeMenu }}" style="width:44px;height:44px;display:grid;place-items:center;border-radius:999px;border:1px solid var(--border-strong);background:transparent;color:var(--text);cursor:pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"></path></svg></button>
+    </div>
+    <nav aria-label="Mobile Navigation" style="display:flex;flex-direction:column;gap:6px;margin-top:40px">
+      <a href="Websites.dc.html" onClick="{{ closeMenu }}" style="display:flex;align-items:center;gap:14px;font:500 40px/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.02em;text-decoration:none;padding:6px 0;border-bottom:1px solid var(--border)">Websites<span aria-hidden="true" style="width:8px;height:8px;border-radius:50%;background:var(--accent)"></span></a>
+      <a href="Google%20Ads.dc.html" style="font:500 40px/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.02em;text-decoration:none;padding:6px 0;border-bottom:1px solid var(--border)">Google Ads</a>
+      <a href="Dravent%20Startseite.dc.html#arbeiten" style="font:500 40px/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.02em;text-decoration:none;padding:6px 0;border-bottom:1px solid var(--border)">Referenzen</a>
+      <a href="Dravent%20Startseite.dc.html#team" style="font:500 40px/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.02em;text-decoration:none;padding:6px 0;border-bottom:1px solid var(--border)">Über uns</a>
+    </nav>
+    <div style="margin-top:auto;display:flex;flex-direction:column;gap:14px">
+      <a href="#kontakt" onClick="{{ closeMenu }}" style="display:flex;align-items:center;justify-content:center;gap:10px;height:52px;border-radius:999px;background:var(--primary-solid);color:#fff;font:500 16px/1 Geist, ui-sans-serif, system-ui, sans-serif;text-decoration:none">Kostenloses Erstgespräch</a>
+      <p style="text-align:center;font:400 13px/1.5 'Geist Mono', ui-monospace, monospace;color:var(--text-muted)">Antwort innerhalb von 24&nbsp;Std.</p>
+    </div>
+  </div>
+</sc-if>
+
+<main id="main">
+
+<!-- HERO -->
+<section style="position:relative;padding:clamp(136px,16vw,184px) 0 clamp(72px,9vw,120px)">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);display:flex;flex-wrap:wrap;align-items:center;gap:56px 48px">
+    <div style="flex:1.15 1 520px;min-width:0;display:flex;flex-direction:column;gap:26px">
+      <nav aria-label="Brotkrümelnavigation" data-intro="" style="font:400 13px/1 'Geist Mono', ui-monospace, monospace;color:var(--text-muted)"><ol style="list-style:none;margin:0;padding:0;display:flex;gap:10px"><li><a href="Dravent%20Startseite.dc.html" style="text-decoration:none;transition:color .2s" style-hover="color:var(--text)">Startseite</a></li><li aria-hidden="true">/</li><li aria-current="page" style="color:var(--text)">Websites</li></ol></nav>
+      <div data-intro="" style="display:flex;align-items:center;gap:12px;font:500 13px/1.3 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)"><span style="width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent);flex:none"></span>Websites</div>
+      <h1 style="margin:0;font:600 clamp(2.5rem, 5.4vw, 4.75rem)/1.03 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.03em;text-wrap:balance"><span style="display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em"><span data-w="" style="display:inline-block">Websites,</span></span> <span style="display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em"><span data-w="" style="display:inline-block">die</span></span> <span style="display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em"><span data-w="" style="display:inline-block">nicht</span></span> <span style="display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em"><span data-w="" style="display:inline-block">nur</span></span> <span style="display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em"><span data-w="" style="display:inline-block">gut</span></span> <span style="display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em"><span data-w="" style="display:inline-block">aussehen,</span></span> <span style="display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em"><span data-w="" style="display:inline-block">sondern</span></span> <span style="display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em"><span data-w="" data-grad-text="" style="display:inline-block;background-image:linear-gradient(90deg, var(--primary), var(--accent), var(--primary));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent">Anfragen</span></span> <span style="display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em"><span data-w="" style="display:inline-block">bringen.</span></span></h1>
+      <p data-intro="" style="max-width:58ch;font-size:clamp(1.125rem, 1.6vw, 1.3125rem);line-height:1.55;color:var(--text-muted);text-wrap:pretty">Individuelles Design, blitzschnelle Technik und eine Nutzerführung, die Besucher zu Kunden macht. Erster Entwurf in 48&nbsp;Stunden, live in 7–14&nbsp;Tagen.</p>
+      <div data-intro="" style="display:flex;flex-wrap:wrap;gap:12px;padding-top:4px">
+        <a href="#kontakt" data-btn="" data-magnetic="" style="display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 20px 0 24px;border-radius:999px;background:var(--primary-solid);color:#fff;font:500 16px/1 Geist, ui-sans-serif, system-ui, sans-serif;text-decoration:none;white-space:nowrap;transition:transform .25s cubic-bezier(.22,1,.36,1), background-color .2s" style-hover="background:var(--primary-solid-hover);color:#fff">Website anfragen<span data-arrow="" style="display:flex;transition:transform .2s cubic-bezier(.22,1,.36,1)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
+        <a href="#kontakt" style="display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:999px;border:1px solid var(--border-strong);color:var(--text);font:500 16px/1 Geist, ui-sans-serif, system-ui, sans-serif;text-decoration:none;white-space:nowrap;transition:border-color .2s" style-hover="border-color:var(--primary)">Bestehende Website checken lassen</a>
+      </div>
+    </div>
+    <div aria-hidden="true" style="flex:1 1 400px;min-width:0;position:relative;border-radius:24px;border:1px solid var(--border);background-color:var(--bg-elevated);background-image:linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);background-size:40px 40px;overflow:hidden">
+      <svg viewBox="0 0 560 440" style="display:block;width:100%;height:auto">
+        <path d="M34 40H426A14 14 0 0 1 440 54V356A14 14 0 0 1 426 370H34A14 14 0 0 1 20 356V54A14 14 0 0 1 34 40Z" style="fill:var(--surface)" data-build=""></path>
+        <path data-draw="" d="M34 40H426A14 14 0 0 1 440 54V356A14 14 0 0 1 426 370H34A14 14 0 0 1 20 356V54A14 14 0 0 1 34 40Z" fill="none" style="stroke:var(--border-strong)" stroke-width="1.5"></path>
+        <path data-draw="" d="M20 76H440" style="stroke:var(--border)" stroke-width="1.5"></path>
+        <g data-build=""><circle cx="40" cy="58" r="4" style="fill:var(--bar-strong)"></circle><circle cx="54" cy="58" r="4" style="fill:var(--bar-strong)"></circle><circle cx="68" cy="58" r="4" style="fill:var(--bar-strong)"></circle><rect x="92" y="51" width="160" height="14" rx="7" style="fill:var(--bar)"></rect></g>
+        <g data-build=""><rect x="44" y="96" width="60" height="10" rx="3" style="fill:var(--bar-strong)"></rect><rect x="290" y="99" width="30" height="6" rx="3" style="fill:var(--bar)"></rect><rect x="330" y="99" width="30" height="6" rx="3" style="fill:var(--bar)"></rect><rect x="370" y="99" width="46" height="6" rx="3" style="fill:var(--primary)"></rect></g>
+        <g data-build=""><rect x="44" y="132" width="220" height="20" rx="4" style="fill:var(--bar-strong)"></rect><rect x="44" y="160" width="160" height="20" rx="4" style="fill:var(--bar-strong)"></rect><rect x="44" y="196" width="200" height="7" rx="3" style="fill:var(--bar)"></rect><rect x="44" y="211" width="150" height="7" rx="3" style="fill:var(--bar)"></rect></g>
+        <g data-build=""><rect x="44" y="236" width="100" height="30" rx="15" style="fill:var(--primary)"></rect><rect x="152.5" y="236.5" width="80" height="29" rx="14.5" fill="none" style="stroke:var(--border-strong)"></rect></g>
+        <g data-build=""><rect x="286.5" y="126.5" width="130" height="140" rx="10" fill="none" style="stroke:var(--border)"></rect><path d="M286 196H416M351 126V266" style="stroke:var(--border)"></path><circle cx="351" cy="196" r="5" style="fill:var(--accent)"></circle></g>
+        <g data-build=""><rect x="44.5" y="290.5" width="112" height="56" rx="8" fill="none" style="stroke:var(--border)"></rect><rect x="168.5" y="290.5" width="112" height="56" rx="8" fill="none" style="stroke:var(--border)"></rect><rect x="292.5" y="290.5" width="112" height="56" rx="8" fill="none" style="stroke:var(--border)"></rect></g>
+        <path d="M420 150H510A20 20 0 0 1 530 170V390A20 20 0 0 1 510 410H420A20 20 0 0 1 400 390V170A20 20 0 0 1 420 150Z" style="fill:var(--bg)" data-build=""></path>
+        <path data-draw="" d="M420 150H510A20 20 0 0 1 530 170V390A20 20 0 0 1 510 410H420A20 20 0 0 1 400 390V170A20 20 0 0 1 420 150Z" fill="none" style="stroke:var(--border-strong)" stroke-width="1.5"></path>
+        <g data-build=""><rect x="450" y="162" width="30" height="5" rx="2.5" style="fill:var(--bar-strong)"></rect><rect x="414" y="190" width="90" height="10" rx="3" style="fill:var(--bar-strong)"></rect><rect x="414" y="206" width="66" height="10" rx="3" style="fill:var(--bar-strong)"></rect><rect x="414" y="226" width="84" height="6" rx="3" style="fill:var(--bar)"></rect><rect x="414" y="238" width="60" height="6" rx="3" style="fill:var(--bar)"></rect><rect x="414" y="258" width="102" height="26" rx="13" style="fill:var(--primary)"></rect><rect x="414.5" y="298.5" width="101" height="40" rx="8" fill="none" style="stroke:var(--border)"></rect><rect x="414.5" y="346.5" width="101" height="40" rx="8" fill="none" style="stroke:var(--border)"></rect></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 01 MERKMALE -->
+<section style="padding:clamp(80px,12vw,160px) 0;border-top:1px solid var(--border)">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px)">
+    <div data-reveal="stagger" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 280px), 1fr));gap:20px">
+      <div style="display:flex;flex-direction:column;gap:22px;padding:8px 8px 24px 0">
+        <div style="display:flex;align-items:center;gap:12px;font:500 13px/1 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)"><span>01</span><span style="width:28px;height:1px;background:var(--border-strong)"></span><span>Was dich erwartet</span></div>
+        <h2 style="margin:0;font:500 clamp(2rem, 3.4vw, 2.75rem)/1.08 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.02em;text-wrap:balance">Was eine Dravent-Website ausmacht.</h2>
+      </div>
+      <article data-spot="" style="display:flex;flex-direction:column;gap:14px;padding:28px;background:radial-gradient(380px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:var(--glow);transition:transform .25s cubic-bezier(.22,1,.36,1), border-color .25s" style-hover="transform:translateY(-4px);border-color:var(--border-strong)">
+        <span style="width:44px;height:44px;border-radius:12px;border:1px solid var(--border-strong);display:grid;place-items:center;color:var(--accent)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg></span>
+        <h3 style="margin:8px 0 0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">Individuelles Webdesign.</h3>
+        <p style="color:var(--text-muted);font-size:16px;text-wrap:pretty">Keine Templates. Jede Website wird für dein Unternehmen und deine Kunden gestaltet.</p>
+      </article>
+      <article data-spot="" style="display:flex;flex-direction:column;gap:14px;padding:28px;background:radial-gradient(380px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:var(--glow);transition:transform .25s cubic-bezier(.22,1,.36,1), border-color .25s" style-hover="transform:translateY(-4px);border-color:var(--border-strong)">
+        <span style="width:44px;height:44px;border-radius:12px;border:1px solid var(--border-strong);display:grid;place-items:center;color:var(--accent)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"></rect><path d="M12 18h.01"></path></svg></span>
+        <h3 style="margin:8px 0 0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">Responsive Entwicklung.</h3>
+        <p style="color:var(--text-muted);font-size:16px;text-wrap:pretty">Über die Hälfte deiner Besucher kommt über das Smartphone. Wir gestalten mobil zuerst.</p>
+      </article>
+      <article data-spot="" style="display:flex;flex-direction:column;gap:14px;padding:28px;background:radial-gradient(380px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:var(--glow);transition:transform .25s cubic-bezier(.22,1,.36,1), border-color .25s" style-hover="transform:translateY(-4px);border-color:var(--border-strong)">
+        <span style="width:44px;height:44px;border-radius:12px;border:1px solid var(--border-strong);display:grid;place-items:center;color:var(--accent)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg></span>
+        <h3 style="margin:8px 0 0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">Schnelle Ladezeiten.</h3>
+        <p style="color:var(--text-muted);font-size:16px;text-wrap:pretty">Jede Sekunde Ladezeit kostet Besucher. Wir optimieren auf Top-Werte bei Google PageSpeed.</p>
+      </article>
+      <article data-spot="" style="display:flex;flex-direction:column;gap:14px;padding:28px;background:radial-gradient(380px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:var(--glow);transition:transform .25s cubic-bezier(.22,1,.36,1), border-color .25s" style-hover="transform:translateY(-4px);border-color:var(--border-strong)">
+        <span style="width:44px;height:44px;border-radius:12px;border:1px solid var(--border-strong);display:grid;place-items:center;color:var(--accent)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg></span>
+        <h3 style="margin:8px 0 0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">SEO-Grundlagen.</h3>
+        <p style="color:var(--text-muted);font-size:16px;text-wrap:pretty">Saubere Struktur, Metadaten, schnelle Technik und strukturierte Daten, damit Google dich versteht.</p>
+      </article>
+      <article data-spot="" style="display:flex;flex-direction:column;gap:14px;padding:28px;background:radial-gradient(380px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:var(--glow);transition:transform .25s cubic-bezier(.22,1,.36,1), border-color .25s" style-hover="transform:translateY(-4px);border-color:var(--border-strong)">
+        <span style="width:44px;height:44px;border-radius:12px;border:1px solid var(--border-strong);display:grid;place-items:center;color:var(--accent)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.5"></circle></svg></span>
+        <h3 style="margin:8px 0 0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">Conversion-orientierte Gestaltung.</h3>
+        <p style="color:var(--text-muted);font-size:16px;text-wrap:pretty">Jede Seite hat ein Ziel. Klare Botschaften und klare nächste Schritte.</p>
+      </article>
+      <article data-spot="" style="display:flex;flex-direction:column;gap:14px;padding:28px;background:radial-gradient(380px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:var(--glow);transition:transform .25s cubic-bezier(.22,1,.36,1), border-color .25s" style-hover="transform:translateY(-4px);border-color:var(--border-strong)">
+        <span style="width:44px;height:44px;border-radius:12px;border:1px solid var(--border-strong);display:grid;place-items:center;color:var(--accent)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18M9 21V9"></path></svg></span>
+        <h3 style="margin:8px 0 0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">Moderne UX.</h3>
+        <p style="color:var(--text-muted);font-size:16px;text-wrap:pretty">Intuitive Navigation, gut lesbare Texte, barrierearm gestaltet.</p>
+      </article>
+      <article data-spot="" style="display:flex;flex-direction:column;gap:14px;padding:28px;background:radial-gradient(380px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:var(--glow);transition:transform .25s cubic-bezier(.22,1,.36,1), border-color .25s" style-hover="transform:translateY(-4px);border-color:var(--border-strong)">
+        <span style="width:44px;height:44px;border-radius:12px;border:1px solid var(--border-strong);display:grid;place-items:center;color:var(--accent)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
+        <h3 style="margin:8px 0 0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">Professionelle Kontaktmöglichkeiten.</h3>
+        <p style="color:var(--text-muted);font-size:16px;text-wrap:pretty">Formulare, Klick-zum-Anrufen, auf Wunsch Online-Terminbuchung.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 02 VORHER / NACHHER -->
+<section style="padding:clamp(80px,12vw,160px) 0;background:var(--bg-elevated);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);display:flex;flex-direction:column;gap:clamp(48px,6vw,72px)">
+    <div data-reveal="" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px 48px">
+      <div style="display:flex;flex-direction:column;gap:22px;max-width:760px">
+        <div style="display:flex;align-items:center;gap:12px;font:500 13px/1 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)"><span>02</span><span style="width:28px;height:1px;background:var(--border-strong)"></span><span>Das Prinzip</span></div>
+        <h2 style="margin:0;font:500 clamp(2rem, 4.2vw, 3.5rem)/1.08 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.02em;text-wrap:balance">Der Unterschied liegt in der Nutzerführung.</h2>
+      </div>
+      <span style="font:500 11px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);border:1px solid var(--border-strong);border-radius:6px;padding:7px 9px">Illustration</span>
+    </div>
+    <div data-reveal="stagger" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 440px), 1fr));gap:24px">
+      <figure style="margin:0;display:flex;flex-direction:column;gap:24px;padding:28px;border-radius:24px;border:1px solid var(--border);background:var(--surface)">
+        <figcaption style="display:flex;align-items:center;gap:10px;font:500 13px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)"><span style="width:8px;height:8px;border-radius:50%;border:1.5px solid var(--text-muted)"></span>Typische Website</figcaption>
+        <div aria-hidden="true" style="position:relative;border-radius:12px;border:1px solid var(--border-strong);background:var(--bg);overflow:hidden">
+          <div style="height:26px;display:flex;align-items:center;gap:5px;padding:0 12px;border-bottom:1px solid var(--border)"><span style="width:6px;height:6px;border-radius:50%;background:var(--bar-strong)"></span><span style="width:6px;height:6px;border-radius:50%;background:var(--bar-strong)"></span><span style="width:6px;height:6px;border-radius:50%;background:var(--bar-strong)"></span></div>
+          <div style="padding:16px;display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;justify-content:space-between;gap:6px"><span style="width:44px;height:8px;border-radius:3px;background:var(--bar-strong)"></span><span style="display:flex;gap:6px"><span style="width:22px;height:5px;border-radius:2px;background:var(--bar)"></span><span style="width:22px;height:5px;border-radius:2px;background:var(--bar)"></span><span style="width:22px;height:5px;border-radius:2px;background:var(--bar)"></span><span style="width:22px;height:5px;border-radius:2px;background:var(--bar)"></span><span style="width:22px;height:5px;border-radius:2px;background:var(--bar)"></span><span style="width:22px;height:5px;border-radius:2px;background:var(--bar)"></span></span></div>
+            <div style="position:relative;height:120px;border-radius:6px;background:var(--bar)"><span style="position:absolute;left:12px;top:12px;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--text-muted);display:grid;place-items:center;font:500 12px/1 'Geist Mono', ui-monospace, monospace;color:var(--text-muted);background:var(--bg)">1</span></div>
+            <span style="width:70%;height:6px;border-radius:3px;background:var(--bar)"></span>
+            <span style="width:84%;height:6px;border-radius:3px;background:var(--bar)"></span>
+            <span style="width:60%;height:6px;border-radius:3px;background:var(--bar)"></span>
+            <div style="position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:4px"><span style="height:34px;border-radius:4px;background:var(--bar)"></span><span style="height:34px;border-radius:4px;background:var(--bar)"></span><span style="height:34px;border-radius:4px;background:var(--bar)"></span><span style="height:34px;border-radius:4px;background:var(--bar)"></span><span style="position:absolute;right:8px;top:4px;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--text-muted);display:grid;place-items:center;font:500 12px/1 'Geist Mono', ui-monospace, monospace;color:var(--text-muted);background:var(--bg)">2</span></div>
+            <div style="position:relative;display:flex;justify-content:flex-end;padding-top:6px"><span style="width:40px;height:5px;border-radius:2px;background:var(--bar)"></span><span style="position:absolute;right:52px;top:-4px;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--text-muted);display:grid;place-items:center;font:500 12px/1 'Geist Mono', ui-monospace, monospace;color:var(--text-muted);background:var(--bg)">3</span></div>
+          </div>
+        </div>
+        <ol style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;font-size:16px;color:var(--text-muted)">
+          <li style="display:flex;gap:12px;align-items:baseline"><span style="font:500 13px/1 'Geist Mono', ui-monospace, monospace;flex:none">01</span>Unklare Botschaft über dem Falz</li>
+          <li style="display:flex;gap:12px;align-items:baseline"><span style="font:500 13px/1 'Geist Mono', ui-monospace, monospace;flex:none">02</span>Kein klarer nächster Schritt</li>
+          <li style="display:flex;gap:12px;align-items:baseline"><span style="font:500 13px/1 'Geist Mono', ui-monospace, monospace;flex:none">03</span>Kontakt nur über Umwege erreichbar</li>
+        </ol>
+      </figure>
+      <figure style="margin:0;display:flex;flex-direction:column;gap:24px;padding:28px;border-radius:24px;border:1px solid var(--border-strong);background:radial-gradient(600px circle at 80% 0%, var(--spot), transparent 60%), var(--surface);box-shadow:var(--glow)">
+        <figcaption style="display:flex;align-items:center;gap:10px;font:500 13px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)"><span style="width:8px;height:8px;border-radius:50%;background:var(--accent)"></span>Dravent-Website</figcaption>
+        <div aria-hidden="true" style="position:relative;border-radius:12px;border:1px solid var(--border-strong);background:var(--bg);overflow:hidden">
+          <div style="height:26px;display:flex;align-items:center;gap:5px;padding:0 12px;border-bottom:1px solid var(--border)"><span style="width:6px;height:6px;border-radius:50%;background:var(--bar-strong)"></span><span style="width:6px;height:6px;border-radius:50%;background:var(--bar-strong)"></span><span style="width:6px;height:6px;border-radius:50%;background:var(--bar-strong)"></span></div>
+          <div style="padding:16px;display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:6px"><span style="width:44px;height:8px;border-radius:3px;background:var(--bar-strong)"></span><span style="display:flex;gap:8px;align-items:center"><span style="width:26px;height:5px;border-radius:2px;background:var(--bar)"></span><span style="width:26px;height:5px;border-radius:2px;background:var(--bar)"></span><span style="width:40px;height:14px;border-radius:7px;background:var(--primary)"></span></span></div>
+            <div style="display:flex;gap:14px;align-items:center;padding:14px 0 10px">
+              <div style="position:relative;flex:1.3;display:flex;flex-direction:column;gap:7px">
+                <span style="width:94%;height:12px;border-radius:3px;background:var(--bar-strong)"></span>
+                <span style="width:70%;height:12px;border-radius:3px;background:var(--bar-strong)"></span>
+                <span style="width:80%;height:5px;border-radius:2px;background:var(--bar);margin-top:4px"></span>
+                <span style="position:relative;display:flex;gap:6px;margin-top:8px"><span style="width:74px;height:22px;border-radius:11px;background:var(--primary)"></span><span style="width:54px;height:22px;border-radius:11px;border:1px solid var(--border-strong)"></span></span>
+                <span style="position:absolute;left:-8px;top:-10px;width:26px;height:26px;border-radius:50%;background:var(--accent);display:grid;place-items:center;font:500 12px/1 'Geist Mono', ui-monospace, monospace;color:#06070B">1</span>
+                <span style="position:absolute;left:62px;bottom:-12px;width:26px;height:26px;border-radius:50%;background:var(--accent);display:grid;place-items:center;font:500 12px/1 'Geist Mono', ui-monospace, monospace;color:#06070B">2</span>
+              </div>
+              <div style="flex:1;height:96px;border-radius:8px;border:1px solid var(--border);background-image:linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);background-size:12px 12px"></div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px"><span style="height:34px;border-radius:6px;border:1px solid var(--border)"></span><span style="height:34px;border-radius:6px;border:1px solid var(--border)"></span><span style="height:34px;border-radius:6px;border:1px solid var(--border)"></span></div>
+            <div style="position:relative;display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-radius:8px;border:1px solid var(--border)"><span style="width:40%;height:6px;border-radius:3px;background:var(--bar-strong)"></span><span style="display:flex;gap:6px"><span style="width:22px;height:22px;border-radius:50%;border:1px solid var(--accent)"></span><span style="width:60px;height:22px;border-radius:11px;background:var(--primary)"></span></span><span style="position:absolute;right:104px;top:-12px;width:26px;height:26px;border-radius:50%;background:var(--accent);display:grid;place-items:center;font:500 12px/1 'Geist Mono', ui-monospace, monospace;color:#06070B">3</span></div>
+          </div>
+        </div>
+        <ol style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;font-size:16px">
+          <li style="display:flex;gap:12px;align-items:baseline"><span style="font:500 13px/1 'Geist Mono', ui-monospace, monospace;color:var(--accent-text);flex:none">01</span>Was, für wen, warum du – in einem Satz</li>
+          <li style="display:flex;gap:12px;align-items:baseline"><span style="font:500 13px/1 'Geist Mono', ui-monospace, monospace;color:var(--accent-text);flex:none">02</span>Klarer Call-to-Action über dem Falz</li>
+          <li style="display:flex;gap:12px;align-items:baseline"><span style="font:500 13px/1 'Geist Mono', ui-monospace, monospace;color:var(--accent-text);flex:none">03</span>Anruf oder Formular mit einem Klick</li>
+        </ol>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 03 PAKETE -->
+<section id="pakete" style="padding:clamp(80px,12vw,160px) 0">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);display:flex;flex-direction:column;gap:clamp(48px,6vw,72px)">
+    <div data-reveal="" style="display:flex;flex-direction:column;gap:22px;max-width:820px">
+      <div style="display:flex;align-items:center;gap:12px;font:500 13px/1 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)"><span>03</span><span style="width:28px;height:1px;background:var(--border-strong)"></span><span>Pakete</span></div>
+      <h2 style="margin:0;font:500 clamp(2rem, 4.2vw, 3.5rem)/1.08 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.02em;text-wrap:balance">Drei Pakete. Ein festes Angebot.</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <div data-reveal="stagger" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 320px), 1fr));gap:20px;align-items:stretch">
+        <article data-spot="" style="display:flex;flex-direction:column;gap:24px;padding:32px;background:radial-gradient(420px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:24px;box-shadow:var(--glow);transition:transform .25s cubic-bezier(.22,1,.36,1), border-color .25s" style-hover="transform:translateY(-4px);border-color:var(--border-strong)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h3 style="margin:0;font:500 1.625rem/1.1 'Clash Display', ui-sans-serif, system-ui, sans-serif">Start</h3><p style="color:var(--text-muted);font-size:16px">Für Selbstständige und kleine Unternehmen.</p></div>
+          <div style="display:flex;align-items:baseline;gap:8px"><span style="color:var(--text-muted);font-size:15px">ab</span><span style="font:600 clamp(2.5rem, 4vw, 3.25rem)/1 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.03em">1.500&nbsp;€</span></div>
+          <ul style="list-style:none;margin:0;padding:24px 0 0;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:12px;font-size:16px">
+            <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Onepager oder bis zu 3 Seiten</li>
+            <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Individuelles Design</li>
+            <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Mobiloptimiert</li>
+            <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Kontaktformular</li>
+            <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>SEO-Grundlagen</li>
+            <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Einbindung Impressum &amp; Datenschutz</li>
+            <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>2 Korrekturschleifen</li>
+          </ul>
+          <a href="#kontakt" style="margin-top:auto;display:flex;align-items:center;justify-content:center;height:48px;border-radius:999px;border:1px solid var(--border-strong);color:var(--text);font:500 16px/1 Geist, ui-sans-serif, system-ui, sans-serif;text-decoration:none;transition:border-color .2s" style-hover="border-color:var(--primary)">Website anfragen</a>
+        </article>
+        <div style="order:{{ popOrder }};padding:1px;border-radius:25px;background:linear-gradient(135deg, var(--primary), var(--accent));box-shadow:0 30px 80px -40px rgba(61,123,255,.55)">
+          <article data-spot="" style="position:relative;height:100%;display:flex;flex-direction:column;gap:24px;padding:32px;background:radial-gradient(420px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border-radius:24px">
+            <span style="position:absolute;right:24px;top:24px;font:500 11px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.12em;text-transform:uppercase;color:#06070B;background:linear-gradient(135deg, #3D7BFF, #2EE6C5);border-radius:999px;padding:7px 11px">Beliebt</span>
+            <div style="display:flex;flex-direction:column;gap:10px"><h3 style="margin:0;font:500 1.625rem/1.1 'Clash Display', ui-sans-serif, system-ui, sans-serif">Business</h3><p style="color:var(--text-muted);font-size:16px">Für Unternehmen, die online Anfragen gewinnen wollen.</p></div>
+            <div style="display:flex;align-items:baseline;gap:8px"><span style="color:var(--text-muted);font-size:15px">ab</span><span style="font:600 clamp(2.5rem, 4vw, 3.25rem)/1 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.03em">2.490&nbsp;€</span></div>
+            <ul style="list-style:none;margin:0;padding:24px 0 0;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:12px;font-size:16px">
+              <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Bis zu 7 Seiten</li>
+              <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Alles aus Start</li>
+              <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Conversion-Konzept</li>
+              <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Anfrage-Tracking</li>
+              <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Google Unternehmensprofil eingerichtet</li>
+              <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>3 Korrekturschleifen</li>
+            </ul>
+            <a href="#kontakt" data-btn="" style="margin-top:auto;display:flex;align-items:center;justify-content:center;gap:10px;height:48px;border-radius:999px;background:var(--primary-solid);color:#fff;font:500 16px/1 Geist, ui-sans-serif, system-ui, sans-serif;text-decoration:none;transition:background-color .2s" style-hover="background:var(--primary-solid-hover);color:#fff">Website anfragen<span data-arrow="" style="display:flex;transition:transform .2s cubic-bezier(.22,1,.36,1)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
+          </article>
+        </div>
+        <article data-spot="" style="display:flex;flex-direction:column;gap:24px;padding:32px;background:radial-gradient(420px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:24px;box-shadow:var(--glow);transition:transform .25s cubic-bezier(.22,1,.36,1), border-color .25s" style-hover="transform:translateY(-4px);border-color:var(--border-strong)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h3 style="margin:0;font:500 1.625rem/1.1 'Clash Display', ui-sans-serif, system-ui, sans-serif">Premium</h3><p style="color:var(--text-muted);font-size:16px">Für den starken Auftritt im Wettbewerb.</p></div>
+          <div style="display:flex;align-items:baseline;gap:8px"><span style="color:var(--text-muted);font-size:15px">ab</span><span style="font:600 clamp(2.5rem, 4vw, 3.25rem)/1 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.03em">3.990&nbsp;€</span></div>
+          <ul style="list-style:none;margin:0;padding:24px 0 0;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:12px;font-size:16px">
+            <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Bis zu 12 Seiten</li>
+            <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Alles aus Business</li>
+            <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Individuelle Animationen</li>
+            <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Landingpage für Google Ads</li>
+            <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Texterstellung inklusive</li>
+            <li style="display:flex;gap:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--accent);flex:none;margin-top:4px"><path d="M20 6 9 17l-5-5"></path></svg>Erweiterte SEO-Optimierung</li>
+          </ul>
+          <a href="#kontakt" style="margin-top:auto;display:flex;align-items:center;justify-content:center;height:48px;border-radius:999px;border:1px solid var(--border-strong);color:var(--text);font:500 16px/1 Geist, ui-sans-serif, system-ui, sans-serif;text-decoration:none;transition:border-color .2s" style-hover="border-color:var(--primary)">Website anfragen</a>
+        </article>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <p style="color:var(--text-muted);font-size:16px">Professionelle Fotos gegen Aufpreis. Jedes Projekt erhält ein festes Angebot nach dem Erstgespräch.</p>
+        <p style="font:400 13px/1.5 'Geist Mono', ui-monospace, monospace;color:var(--text-muted)">[PREISHINWEIS]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 BETREUUNG -->
+<section style="padding:clamp(80px,12vw,160px) 0;background:var(--bg-elevated);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);display:flex;flex-wrap:wrap;gap:clamp(40px,6vw,80px)">
+    <div data-reveal="" style="flex:1 1 320px;display:flex;flex-direction:column;gap:22px">
+      <div style="display:flex;align-items:center;gap:12px;font:500 13px/1 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)"><span>04</span><span style="width:28px;height:1px;background:var(--border-strong)"></span><span>Betreuung</span></div>
+      <h2 style="margin:0;font:500 clamp(2rem, 4.2vw, 3.5rem)/1.08 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.02em;text-wrap:balance">Nach dem Livegang bleiben wir dran.</h2>
+      <p style="max-width:42ch;color:var(--text-muted);text-wrap:pretty">Hosting, Sicherheit und Änderungen aus einer Hand. Du kümmerst dich um dein Unternehmen, wir um deine Website.</p>
+    </div>
+    <div data-reveal="stagger" style="flex:2 1 600px;display:flex;flex-direction:column;gap:12px">
+      <article data-spot="" style="display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px;padding:26px 28px;background:radial-gradient(420px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:var(--glow)">
+        <div style="flex:0 0 190px;display:flex;flex-direction:column;gap:6px"><h3 style="margin:0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">Basis</h3><span style="font:500 14px/1.3 'Geist Mono', ui-monospace, monospace;color:var(--text-muted)">ab <span style="color:var(--text);font-size:17px">69,99&nbsp;€</span>/Monat</span></div>
+        <p style="flex:1 1 300px;color:var(--text-muted);font-size:16px;text-wrap:pretty">Hosting, SSL-Zertifikat, technische Updates, tägliche Backups, kleine Änderungen bis 30&nbsp;Min./Monat.</p>
+      </article>
+      <article data-spot="" style="display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px;padding:26px 28px;background:radial-gradient(420px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:var(--glow)">
+        <div style="flex:0 0 190px;display:flex;flex-direction:column;gap:6px"><h3 style="margin:0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">Plus</h3><span style="font:500 14px/1.3 'Geist Mono', ui-monospace, monospace;color:var(--text-muted)">ab <span style="color:var(--text);font-size:17px">129&nbsp;€</span>/Monat</span></div>
+        <p style="flex:1 1 300px;color:var(--text-muted);font-size:16px;text-wrap:pretty">Alles aus Basis, Änderungen bis 2&nbsp;Std./Monat, monatlicher Performance-Check.</p>
+      </article>
+      <article data-spot="" style="display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px;padding:26px 28px;background:radial-gradient(420px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:var(--glow)">
+        <div style="flex:0 0 190px;display:flex;flex-direction:column;gap:6px"><h3 style="margin:0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">Pro</h3><span style="font:500 14px/1.3 'Geist Mono', ui-monospace, monospace;color:var(--text-muted)">ab <span style="color:var(--text);font-size:17px">249&nbsp;€</span>/Monat</span></div>
+        <p style="flex:1 1 300px;color:var(--text-muted);font-size:16px;text-wrap:pretty">Alles aus Plus, Änderungen bis 5&nbsp;Std./Monat, laufende Conversion-Optimierung, monatliches Reporting.</p>
+      </article>
+      <p style="font:400 13px/1.5 'Geist Mono', ui-monospace, monospace;color:var(--text-muted);padding-top:8px">[PREISHINWEIS]</p>
+    </div>
+  </div>
+</section>
+
+<!-- 05 ABLAUF -->
+<section style="padding:clamp(80px,12vw,160px) 0">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);display:flex;flex-direction:column;gap:clamp(48px,6vw,88px)">
+    <div data-reveal="" style="display:flex;flex-direction:column;gap:22px;max-width:820px">
+      <div style="display:flex;align-items:center;gap:12px;font:500 13px/1 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)"><span>05</span><span style="width:28px;height:1px;background:var(--border-strong)"></span><span>Ablauf</span></div>
+      <h2 style="margin:0;font:500 clamp(2rem, 4.2vw, 3.5rem)/1.08 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.02em;text-wrap:balance">Von der ersten Nachricht bis live in 7–14&nbsp;Tagen.</h2>
+    </div>
+    <div data-proc="" style="position:relative">
+      <div aria-hidden="true" style="position:absolute;left:7px;top:{{ plTop }};right:{{ plRight }};bottom:{{ plBottom }};width:{{ plW }};height:{{ plH }};background:var(--border-strong)"><div data-proc-fill="" style="position:absolute;inset:0;background:linear-gradient(90deg, var(--primary), var(--accent));transform-origin:left top;transform:scale(0)"></div></div>
+      <ol style="position:relative;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:{{ procCols }};gap:{{ procGap }}">
+        <li style="position:relative;padding:{{ procPad }};display:flex;flex-direction:column;gap:10px">
+          <span aria-hidden="true" style="position:absolute;left:0;top:0;width:15px;height:15px;border-radius:50%;border:1.5px solid {{ pb0 }};background:{{ pf0 }};box-shadow:{{ pg0 }};transition:all .4s ease"></span>
+          <span style="font:500 12px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)">Tag 0</span>
+          <h3 style="margin:0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">Erstgespräch</h3>
+          <p style="font-size:15.5px;line-height:1.6;color:var(--text-muted);text-wrap:pretty">20–30 Minuten, kostenlos. Wir verstehen dein Unternehmen, deine Kunden und deine Ziele.</p>
+        </li>
+        <li style="position:relative;padding:{{ procPad }};display:flex;flex-direction:column;gap:10px">
+          <span aria-hidden="true" style="position:absolute;left:0;top:0;width:15px;height:15px;border-radius:50%;border:1.5px solid {{ pb1 }};background:{{ pf1 }};box-shadow:{{ pg1 }};transition:all .4s ease"></span>
+          <span style="font:500 12px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)">Tag 1</span>
+          <h3 style="margin:0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">Konzept</h3>
+          <p style="font-size:15.5px;line-height:1.6;color:var(--text-muted);text-wrap:pretty">Seitenstruktur, Inhalte und das Ziel jeder Seite. Du weißt genau, was gebaut wird.</p>
+        </li>
+        <li style="position:relative;padding:{{ procPad }};display:flex;flex-direction:column;gap:10px">
+          <span aria-hidden="true" style="position:absolute;left:0;top:0;width:15px;height:15px;border-radius:50%;border:1.5px solid {{ pb2 }};background:{{ pf2 }};box-shadow:{{ pg2 }};transition:all .4s ease"></span>
+          <span style="font:500 12px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)">Innerhalb von 48&nbsp;Std.</span>
+          <h3 style="margin:0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">Erster Entwurf</h3>
+          <p style="font-size:15.5px;line-height:1.6;color:var(--text-muted);text-wrap:pretty">Du siehst dein Design auf Desktop und Smartphone, bevor es gebaut wird, und gibst Feedback.</p>
+        </li>
+        <li style="position:relative;padding:{{ procPad }};display:flex;flex-direction:column;gap:10px">
+          <span aria-hidden="true" style="position:absolute;left:0;top:0;width:15px;height:15px;border-radius:50%;border:1.5px solid {{ pb3 }};background:{{ pf3 }};box-shadow:{{ pg3 }};transition:all .4s ease"></span>
+          <span style="font:500 12px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)">Tag 7–14</span>
+          <h3 style="margin:0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">Umsetzung &amp; Livegang</h3>
+          <p style="font-size:15.5px;line-height:1.6;color:var(--text-muted);text-wrap:pretty">Entwicklung, Tests auf allen Geräten, Anfrage-Tracking, Livegang.</p>
+        </li>
+        <li style="position:relative;padding:{{ procPad }};display:flex;flex-direction:column;gap:10px">
+          <span aria-hidden="true" style="position:absolute;left:0;top:0;width:15px;height:15px;border-radius:50%;border:1.5px solid {{ pb4 }};background:{{ pf4 }};box-shadow:{{ pg4 }};transition:all .4s ease"></span>
+          <span style="font:500 12px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)">Laufend</span>
+          <h3 style="margin:0;font:500 1.375rem/1.2 'Clash Display', ui-sans-serif, system-ui, sans-serif">Betreuung &amp; Wachstum</h3>
+          <p style="font-size:15.5px;line-height:1.6;color:var(--text-muted);text-wrap:pretty">Hosting, Updates, Änderungen und auf Wunsch Google Ads.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 06 EINSTIEGE -->
+<section style="padding:clamp(80px,12vw,160px) 0;border-top:1px solid var(--border)">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);display:flex;flex-direction:column;gap:clamp(40px,5vw,64px)">
+    <div data-reveal="" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px 48px">
+      <div style="display:flex;flex-direction:column;gap:22px;max-width:760px">
+        <div style="display:flex;align-items:center;gap:12px;font:500 13px/1 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)"><span>06</span><span style="width:28px;height:1px;background:var(--border-strong)"></span><span>Dein Einstieg</span></div>
+        <h2 style="margin:0;font:500 clamp(2rem, 4.2vw, 3.5rem)/1.08 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.02em;text-wrap:balance">Neue Website, Relaunch oder Landingpage.</h2>
+      </div>
+      <p style="max-width:40ch;color:var(--text-muted);text-wrap:pretty">Egal, wo du gerade stehst: Im Erstgespräch finden wir heraus, welcher Weg für dich passt.</p>
+    </div>
+    <div data-reveal="stagger" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 320px), 1fr));gap:20px">
+      <article data-spot="" style="display:flex;flex-direction:column;overflow:hidden;background:radial-gradient(420px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:24px;box-shadow:var(--glow);transition:transform .25s cubic-bezier(.22,1,.36,1), border-color .25s" style-hover="transform:translateY(-4px);border-color:var(--border-strong)">
+        <div aria-hidden="true" style="height:180px;border-bottom:1px solid var(--border);background-image:linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);background-size:28px 28px;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 200 120" width="200" height="120"><rect x="30.5" y="14.5" width="140" height="92" rx="8" fill="none" style="stroke:var(--border-strong)" stroke-dasharray="4 4"></rect><path d="M100 44v32M84 60h32" style="stroke:var(--accent)" stroke-width="2" stroke-linecap="round"></path></svg></div>
+        <div style="padding:28px 32px 32px;display:flex;flex-direction:column;gap:14px;flex:1">
+          <span style="font:500 13px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.1em;color:var(--accent-text)">01</span>
+          <h3 style="margin:0;font:500 clamp(1.5rem, 2.4vw, 1.875rem)/1.15 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.015em">Neue Website</h3>
+          <p style="color:var(--text-muted);font-size:16px;text-wrap:pretty">Wir bauen deinen Auftritt von Grund auf: Struktur, Design, Texte auf Wunsch und Technik.</p>
+          <p style="margin-top:auto;padding-top:18px;border-top:1px solid var(--border);font-size:15px;text-wrap:pretty"><span style="font:500 12px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:8px">Passt, wenn</span>du noch keine Website hast oder bisher mit einem Provisorium arbeitest.</p>
+          <a href="#pakete" style="align-self:flex-start;display:inline-flex;align-items:center;gap:8px;font-weight:500;text-decoration:none;padding:6px 0;background-image:linear-gradient(currentColor, currentColor);background-size:0% 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .25s cubic-bezier(.22,1,.36,1)" style-hover="background-size:100% 1px">Pakete ansehen<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+        </div>
+      </article>
+      <article data-spot="" style="display:flex;flex-direction:column;overflow:hidden;background:radial-gradient(420px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:24px;box-shadow:var(--glow);transition:transform .25s cubic-bezier(.22,1,.36,1), border-color .25s" style-hover="transform:translateY(-4px);border-color:var(--border-strong)">
+        <div aria-hidden="true" style="height:180px;border-bottom:1px solid var(--border);background-image:linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);background-size:28px 28px;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 220 120" width="220" height="120"><rect x="10.5" y="24.5" width="80" height="72" rx="6" fill="none" style="stroke:var(--border-strong)"></rect><rect x="20" y="36" width="60" height="6" rx="3" style="fill:var(--bar)"></rect><rect x="20" y="48" width="44" height="6" rx="3" style="fill:var(--bar)"></rect><rect x="20" y="60" width="52" height="6" rx="3" style="fill:var(--bar)"></rect><path d="M98 60h22" style="stroke:var(--primary)" stroke-width="1.75" stroke-linecap="round"></path><path d="m114 54 6 6-6 6" fill="none" style="stroke:var(--primary)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path><rect x="128.5" y="18.5" width="82" height="84" rx="8" style="fill:var(--bg);stroke:var(--border-strong)"></rect><rect x="138" y="32" width="56" height="9" rx="3" style="fill:var(--bar-strong)"></rect><rect x="138" y="46" width="40" height="9" rx="3" style="fill:var(--bar-strong)"></rect><rect x="138" y="64" width="44" height="14" rx="7" style="fill:var(--primary)"></rect><circle cx="198" cy="90" r="4" style="fill:var(--accent)"></circle></svg></div>
+        <div style="padding:28px 32px 32px;display:flex;flex-direction:column;gap:14px;flex:1">
+          <span style="font:500 13px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.1em;color:var(--accent-text)">02</span>
+          <h3 style="margin:0;font:500 clamp(1.5rem, 2.4vw, 1.875rem)/1.15 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.015em">Relaunch</h3>
+          <p style="color:var(--text-muted);font-size:16px;text-wrap:pretty">Wir analysieren, was funktioniert, übernehmen sinnvolle Inhalte und sorgen dafür, dass bestehende Google-Rankings beim Umzug nicht verloren gehen.</p>
+          <p style="margin-top:auto;padding-top:18px;border-top:1px solid var(--border);font-size:15px;text-wrap:pretty"><span style="font:500 12px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:8px">Passt, wenn</span>deine Website veraltet, langsam oder auf dem Handy schlecht bedienbar ist.</p>
+          <a href="#kontakt" style="align-self:flex-start;display:inline-flex;align-items:center;gap:8px;font-weight:500;text-decoration:none;padding:6px 0;background-image:linear-gradient(currentColor, currentColor);background-size:0% 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .25s cubic-bezier(.22,1,.36,1)" style-hover="background-size:100% 1px">Bestehende Website checken lassen<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+        </div>
+      </article>
+      <article data-spot="" style="display:flex;flex-direction:column;overflow:hidden;background:radial-gradient(420px circle at var(--mx,50%) var(--my,-60%), var(--spot), transparent 65%), var(--surface);border:1px solid var(--border);border-radius:24px;box-shadow:var(--glow);transition:transform .25s cubic-bezier(.22,1,.36,1), border-color .25s" style-hover="transform:translateY(-4px);border-color:var(--border-strong)">
+        <div aria-hidden="true" style="height:180px;border-bottom:1px solid var(--border);background-image:linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);background-size:28px 28px;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 220 120" width="220" height="120"><rect x="10.5" y="42.5" width="64" height="36" rx="8" fill="none" style="stroke:var(--primary)"></rect><rect x="20" y="52" width="30" height="5" rx="2.5" style="fill:var(--primary)"></rect><rect x="20" y="63" width="44" height="5" rx="2.5" style="fill:var(--bar)"></rect><path d="M76 60h40" style="stroke:var(--border-strong)" stroke-width="1.5" stroke-dasharray="3 4"></path><rect x="118.5" y="12.5" width="72" height="96" rx="8" style="fill:var(--bg);stroke:var(--border-strong)"></rect><rect x="128" y="26" width="50" height="8" rx="3" style="fill:var(--bar-strong)"></rect><rect x="128" y="40" width="36" height="8" rx="3" style="fill:var(--bar-strong)"></rect><rect x="128" y="58" width="52" height="5" rx="2.5" style="fill:var(--bar)"></rect><rect x="128" y="78" width="52" height="16" rx="8" style="fill:var(--primary)"></rect><circle cx="200" cy="86" r="5" style="fill:var(--accent)"></circle></svg></div>
+        <div style="padding:28px 32px 32px;display:flex;flex-direction:column;gap:14px;flex:1">
+          <span style="font:500 13px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.1em;color:var(--accent-text)">03</span>
+          <h3 style="margin:0;font:500 clamp(1.5rem, 2.4vw, 1.875rem)/1.15 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.015em">Landingpage</h3>
+          <p style="color:var(--text-muted);font-size:16px;text-wrap:pretty">Eine Seite, ein Ziel. Gebaut für ein einzelnes Angebot oder als Zielseite für deine Anzeigen.</p>
+          <p style="margin-top:auto;padding-top:18px;border-top:1px solid var(--border);font-size:15px;text-wrap:pretty"><span style="font:500 12px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:8px">Passt, wenn</span>du Google Ads schaltest oder ein Angebot gezielt bewerben willst.</p>
+          <a href="Google%20Ads.dc.html" style="align-self:flex-start;display:inline-flex;align-items:center;gap:8px;font-weight:500;text-decoration:none;padding:6px 0;background-image:linear-gradient(currentColor, currentColor);background-size:0% 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .25s cubic-bezier(.22,1,.36,1)" style-hover="background-size:100% 1px">Mehr zu Google Ads<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 07 FAQ -->
+<section style="padding:clamp(80px,12vw,160px) 0;border-top:1px solid var(--border)">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);display:flex;flex-wrap:wrap;gap:clamp(40px,6vw,96px)">
+    <div data-reveal="" style="flex:1 1 320px;display:flex;flex-direction:column;gap:22px">
+      <div style="display:flex;align-items:center;gap:12px;font:500 13px/1 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-text)"><span>07</span><span style="width:28px;height:1px;background:var(--border-strong)"></span><span>Fragen</span></div>
+      <h2 style="margin:0;font:500 clamp(2rem, 4.2vw, 3.5rem)/1.08 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.02em;text-wrap:balance">Fragen zu Websites.</h2>
+    </div>
+    <div data-reveal="" style="flex:1.6 1 560px;border-top:1px solid var(--border)">
+      <div style="border-bottom:1px solid var(--border)">
+        <h3 style="margin:0"><button type="button" aria-expanded="{{ fa0 }}" aria-controls="faq-p0" onClick="{{ tf0 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:26px 0;background:none;border:0;color:var(--text);text-align:left;cursor:pointer;font:500 clamp(1.125rem, 1.6vw, 1.3125rem)/1.35 Geist, ui-sans-serif, system-ui, sans-serif">Kann ich meine Website später selbst ändern?<span aria-hidden="true" style="flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--border-strong);display:grid;place-items:center;transform:{{ fr0 }};transition:transform .3s cubic-bezier(.22,1,.36,1)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></button></h3>
+        <sc-if value="{{ f0 }}" hint-placeholder-val="{{ false }}"><div id="faq-p0" role="region" style="padding:0 56px 28px 0;color:var(--text-muted);max-width:68ch;text-wrap:pretty">Kleine Änderungen übernehmen wir im Rahmen der Betreuung. Wenn du regelmäßig selbst Inhalte pflegen willst, sprechen wir im Erstgespräch über eine passende Lösung.</div></sc-if>
+      </div>
+      <div style="border-bottom:1px solid var(--border)">
+        <h3 style="margin:0"><button type="button" aria-expanded="{{ fa1 }}" aria-controls="faq-p1" onClick="{{ tf1 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:26px 0;background:none;border:0;color:var(--text);text-align:left;cursor:pointer;font:500 clamp(1.125rem, 1.6vw, 1.3125rem)/1.35 Geist, ui-sans-serif, system-ui, sans-serif">Gehört mir die Website?<span aria-hidden="true" style="flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--border-strong);display:grid;place-items:center;transform:{{ fr1 }};transition:transform .3s cubic-bezier(.22,1,.36,1)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></button></h3>
+        <sc-if value="{{ f1 }}" hint-placeholder-val="{{ false }}"><div id="faq-p1" role="region" style="padding:0 56px 28px 0;color:var(--text-muted);max-width:68ch;text-wrap:pretty">[EIGENTUMS-/NUTZUNGSREGELUNG – ANPASSEN]</div></sc-if>
+      </div>
+      <div style="border-bottom:1px solid var(--border)">
+        <h3 style="margin:0"><button type="button" aria-expanded="{{ fa2 }}" aria-controls="faq-p2" onClick="{{ tf2 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:26px 0;background:none;border:0;color:var(--text);text-align:left;cursor:pointer;font:500 clamp(1.125rem, 1.6vw, 1.3125rem)/1.35 Geist, ui-sans-serif, system-ui, sans-serif">Was passiert mit meiner bestehenden Website?<span aria-hidden="true" style="flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--border-strong);display:grid;place-items:center;transform:{{ fr2 }};transition:transform .3s cubic-bezier(.22,1,.36,1)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></button></h3>
+        <sc-if value="{{ f2 }}" hint-placeholder-val="{{ false }}"><div id="faq-p2" role="region" style="padding:0 56px 28px 0;color:var(--text-muted);max-width:68ch;text-wrap:pretty">Wir analysieren, was funktioniert, übernehmen sinnvolle Inhalte und sorgen dafür, dass bestehende Google-Rankings beim Umzug nicht verloren gehen.</div></sc-if>
+      </div>
+      <div style="border-bottom:1px solid var(--border)">
+        <h3 style="margin:0"><button type="button" aria-expanded="{{ fa3 }}" aria-controls="faq-p3" onClick="{{ tf3 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:26px 0;background:none;border:0;color:var(--text);text-align:left;cursor:pointer;font:500 clamp(1.125rem, 1.6vw, 1.3125rem)/1.35 Geist, ui-sans-serif, system-ui, sans-serif">Ist die Betreuung Pflicht?<span aria-hidden="true" style="flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--border-strong);display:grid;place-items:center;transform:{{ fr3 }};transition:transform .3s cubic-bezier(.22,1,.36,1)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></button></h3>
+        <sc-if value="{{ f3 }}" hint-placeholder-val="{{ false }}"><div id="faq-p3" role="region" style="padding:0 56px 28px 0;color:var(--text-muted);max-width:68ch;text-wrap:pretty">[REGELUNG – ANPASSEN]</div></sc-if>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="kontakt" style="padding:0 clamp(12px,2vw,24px) clamp(12px,2vw,24px)">
+  <div data-sig-root="" style="position:relative;overflow:hidden;border-radius:32px;border:1px solid var(--border);background:var(--bg-elevated);padding:clamp(88px,11vw,152px) clamp(20px,4vw,48px)">
+    <div aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);background-size:48px 48px;-webkit-mask-image:radial-gradient(ellipse 70% 80% at 50% 60%, #000 30%, transparent 80%);mask-image:radial-gradient(ellipse 70% 80% at 50% 60%, #000 30%, transparent 80%)"></div>
+    <svg aria-hidden="true" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%">
+      <path id="sig-c1" d="M0 120H288V336H480" fill="none" style="stroke:var(--border-strong)" stroke-width="1"></path>
+      <path id="sig-c2" d="M1200 96H912V336H720" fill="none" style="stroke:var(--border-strong)" stroke-width="1"></path>
+      <g data-sig-dot="" data-path="sig-c1" data-off="0" data-dur="4200"><circle r="10" style="fill:var(--primary)" opacity=".3"></circle><circle r="2.8" fill="#fff"></circle></g>
+      <g data-sig-dot="" data-path="sig-c2" data-off=".5" data-dur="4600"><circle r="10" style="fill:var(--accent)" opacity=".3"></circle><circle r="2.8" fill="#fff"></circle></g>
+    </svg>
+    <div data-reveal="" style="position:relative;max-width:860px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:28px">
+      <h2 style="margin:0;font:500 clamp(2.25rem, 5vw, 4.25rem)/1.05 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:-.025em;text-wrap:balance">Dein erster Entwurf ist 48&nbsp;Stunden entfernt.</h2>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px">
+        <a href="#kontakt" data-btn="" data-magnetic="" style="display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 20px 0 24px;border-radius:999px;background:var(--primary-solid);color:#fff;font:500 16px/1 Geist, ui-sans-serif, system-ui, sans-serif;text-decoration:none;white-space:nowrap;transition:transform .25s cubic-bezier(.22,1,.36,1), background-color .2s;box-shadow:0 0 0 6px rgba(61,123,255,.12)" style-hover="background:var(--primary-solid-hover);color:#fff">Website anfragen<span data-arrow="" style="display:flex;transition:transform .2s cubic-bezier(.22,1,.36,1)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a>
+        <a href="#kontakt" style="display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:999px;border:1px solid var(--border-strong);background:var(--bg-elevated);color:var(--text);font:500 16px/1 Geist, ui-sans-serif, system-ui, sans-serif;text-decoration:none;white-space:nowrap;transition:border-color .2s" style-hover="border-color:var(--primary)">Website kostenlos checken lassen</a>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 24px;font:400 14px/1.4 'Geist Mono', ui-monospace, monospace;color:var(--text-muted)">
+        <span style="display:flex;align-items:center;gap:8px;color:var(--text)"><span style="width:6px;height:6px;border-radius:50%;background:var(--accent)"></span>Kostenlos, unverbindlich, 20–30&nbsp;Minuten.</span>
+        <span>Antwort innerhalb von 24&nbsp;Stunden.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer data-footer="" style="position:relative;overflow:hidden;padding-top:clamp(64px,8vw,104px)">
+  <div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);display:flex;flex-direction:column;gap:56px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 200px), 1fr));gap:40px 32px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <a href="Dravent%20Startseite.dc.html" data-logo="" aria-label="Dravent – zur Startseite" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" style="overflow:visible"><path d="M7 5V27H14A11 11 0 0 0 24.34 12.24" stroke="url(#dr-grad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 5H12.5" stroke="url(#dr-grad)" stroke-width="2.6" stroke-linecap="round"></path><path data-logo-arrow="" d="M15.5 16.5L26 6M20.5 6H26V11.5" stroke="url(#dr-grad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <span style="display:flex;align-items:baseline;font:600 21px/1 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:.04em">DR<span style="display:inline-block;transform:scaleY(-1) translateY(-.02em)">V</span>VENT</span>
+        </a>
+        <p style="font:500 15px/1.5 Geist, sans-serif;color:var(--text-muted)">Sichtbarkeit mit System.</p>
+      </div>
+      <nav aria-label="Seiten" style="display:flex;flex-direction:column;gap:12px;font-size:15px">
+        <span style="font:500 12px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px">Navigation</span>
+        <a href="Dravent%20Startseite.dc.html" style="text-decoration:none;color:var(--text-muted);transition:color .2s" style-hover="color:var(--text)">Startseite</a>
+        <a href="Websites.dc.html" style="text-decoration:none;color:var(--text-muted);transition:color .2s" style-hover="color:var(--text)">Websites</a>
+        <a href="Google%20Ads.dc.html" style="text-decoration:none;color:var(--text-muted);transition:color .2s" style-hover="color:var(--text)">Google Ads</a>
+        <a href="Dravent%20Startseite.dc.html#arbeiten" style="text-decoration:none;color:var(--text-muted);transition:color .2s" style-hover="color:var(--text)">Referenzen</a>
+        <a href="Dravent%20Startseite.dc.html#team" style="text-decoration:none;color:var(--text-muted);transition:color .2s" style-hover="color:var(--text)">Über uns</a>
+        <a href="#kontakt" style="text-decoration:none;color:var(--text-muted);transition:color .2s" style-hover="color:var(--text)">Kontakt</a>
+      </nav>
+      <div style="display:flex;flex-direction:column;gap:12px;font-size:15px;color:var(--text-muted)">
+        <span style="font:500 12px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px">Leistungen</span>
+        <span>Website-Erstellung</span><span>Relaunch</span><span>Landingpages</span><span>Google Ads</span><span>Betreuung &amp; Wartung</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;font-size:15px">
+        <span style="font:500 12px/1 'Geist Mono', ui-monospace, monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px">Kontakt</span>
+        <a href="tel:[TELEFON]" style="text-decoration:none;color:var(--text-muted);transition:color .2s" style-hover="color:var(--text)">[TELEFON]</a>
+        <a href="mailto:[E-MAIL]" style="text-decoration:none;color:var(--text-muted);transition:color .2s" style-hover="color:var(--text)">[E-MAIL]</a>
+        <span style="color:var(--text-muted)">[STRASSE, PLZ ORT]</span>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding:24px 0;border-top:1px solid var(--border);font:400 13px/1.5 'Geist Mono', ui-monospace, monospace;color:var(--text-muted)">
+      <span>© {{ year }} Dravent</span>
+      <div style="display:flex;gap:24px"><a href="#top" style="text-decoration:none;transition:color .2s" style-hover="color:var(--text)">Impressum</a><a href="#top" style="text-decoration:none;transition:color .2s" style-hover="color:var(--text)">Datenschutz</a></div>
+    </div>
+  </div>
+  <div aria-hidden="true" style="height:clamp(64px, 13vw, 190px);overflow:hidden;display:flex;justify-content:center;pointer-events:none;user-select:none">
+    <span style="display:flex;align-items:baseline;font:600 clamp(96px, 21vw, 310px)/.8 'Clash Display', ui-sans-serif, system-ui, sans-serif;letter-spacing:.02em;color:transparent;-webkit-text-stroke:1px var(--border-strong);white-space:nowrap">DR<span style="display:inline-block;transform:scaleY(-1) translateY(-.02em)">V</span>VENT</span>
+  </div>
+</footer>
+
+<div aria-hidden="{{ mctaHidden }}" style="position:fixed;left:0;right:0;bottom:0;z-index:40;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--border);display:flex;gap:10px;transform:{{ mctaTf }};transition:transform .4s cubic-bezier(.22,1,.36,1)">
+  <a href="#kontakt" tabindex="{{ mctaTab }}" style="flex:1;display:flex;align-items:center;justify-content:center;height:52px;border-radius:999px;background:var(--primary-solid);color:#fff;font:500 16px/1 Geist, ui-sans-serif, system-ui, sans-serif;text-decoration:none">Erstgespräch</a>
+  <a href="tel:[TELEFON]" tabindex="{{ mctaTab }}" aria-label="Anrufen" style="flex:none;width:52px;height:52px;display:grid;place-items:center;border-radius:50%;border:1px solid var(--border-strong);color:var(--text);text-decoration:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;theme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;dark&quot;,&quot;light&quot;],&quot;default&quot;:&quot;dark&quot;,&quot;tsType&quot;:&quot;'dark' | 'light'&quot;,&quot;section&quot;:&quot;Darstellung&quot;},&quot;motion&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Darstellung&quot;},&quot;grain&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Darstellung&quot;}}">
+const THEMES = {
+  dark: {'--bg':'#06070B','--bg-elevated':'#0B0D13','--surface':'#11141C','--surface-hover':'#161A24','--border':'rgba(255,255,255,.08)','--border-strong':'rgba(255,255,255,.16)','--text':'#F2F4F8','--text-muted':'#9AA3B2','--text-subtle':'#6B7280','--primary':'#3D7BFF','--primary-hover':'#5A8FFF','--primary-solid':'#2F6BF5','--primary-solid-hover':'#245CDB','--accent':'#2EE6C5','--accent-text':'#2EE6C5','--glass':'rgba(6,7,11,.8)','--grid':'rgba(255,255,255,.055)','--spot':'rgba(61,123,255,.11)','--bar':'rgba(255,255,255,.07)','--bar-strong':'rgba(255,255,255,.14)','--glow':'inset 0 1px 0 rgba(255,255,255,.06)','--shadow-pop':'0 24px 60px -24px rgba(0,0,0,.6)'},
+  light: {'--bg':'#F6F7FA','--bg-elevated':'#EEF0F5','--surface':'#FFFFFF','--surface-hover':'#F9FAFC','--border':'rgba(11,13,18,.08)','--border-strong':'rgba(11,13,18,.16)','--text':'#0B0D12','--text-muted':'#4B5563','--text-subtle':'#6B7280','--primary':'#2563EB','--primary-hover':'#1D4ED8','--primary-solid':'#2563EB','--primary-solid-hover':'#1D4ED8','--accent':'#0E9F86','--accent-text':'#0A7D69','--glass':'rgba(246,247,250,.8)','--grid':'rgba(11,13,18,.06)','--spot':'rgba(37,99,235,.07)','--bar':'rgba(11,13,18,.06)','--bar-strong':'rgba(11,13,18,.12)','--glow':'0 1px 2px rgba(11,13,18,.04)','--shadow-pop':'0 24px 60px -28px rgba(11,13,18,.25)'}
+};
+const EASE = 'cubic-bezier(.22,1,.36,1)';
+const clamp = v => Math.max(0, Math.min(1, v));
+
+class Component extends DCLogic {
+  state = { theme: 'dark', narrow: false, menu: false, faq: -1, adv: {}, lit: 0, mcta: false };
+
+  componentDidMount() {
+    let saved = null;
+    try { saved = localStorage.getItem('dravent-theme'); } catch (e) {}
+    this.setState({ theme: saved || this.props.theme || 'dark' }, () => this.applyTheme());
+    this.motion = (this.props.motion ?? true) && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.lastY = window.scrollY;
+    this.onResize = () => { const n = window.innerWidth < 900; if (n !== this.state.narrow) this.setState({ narrow: n }, () => this.scroll()); else this.scroll(); };
+    this.onScroll = () => { if (!this.sraf) this.sraf = requestAnimationFrame(() => { this.sraf = null; this.scroll(); }); };
+    this.onPointer = e => this.pointer(e);
+    this.onKey = e => { if (e.key === 'Escape' && this.state.menu) this.closeMenu(); };
+    window.addEventListener('resize', this.onResize);
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    document.addEventListener('pointermove', this.onPointer);
+    document.addEventListener('keydown', this.onKey);
+    this.onResize();
+    setTimeout(() => { this.setupReveal(); this.intro(); this.startLoop(); this.scroll(); }, 60);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('scroll', this.onScroll);
+    document.removeEventListener('pointermove', this.onPointer);
+    document.removeEventListener('keydown', this.onKey);
+    cancelAnimationFrame(this.lraf);
+    if (this.io) this.io.disconnect();
+    if (this.vio) this.vio.disconnect();
+    document.body.style.overflow = '';
+  }
+
+  componentDidUpdate(prev) {
+    if (prev.theme !== this.props.theme && this.props.theme) this.setState({ theme: this.props.theme }, () => this.applyTheme());
+  }
+
+  q(s) { return document.querySelector(s); }
+
+  applyTheme() {
+    const root = this.q('[data-dr-root]');
+    if (!root) return;
+    const vars = THEMES[this.state.theme] || THEMES.dark;
+    Object.keys(vars).forEach(k => root.style.setProperty(k, vars[k]));
+    document.body.style.background = vars['--bg'];
+    document.documentElement.style.colorScheme = this.state.theme;
+  }
+
+  toggleTheme() {
+    const theme = this.state.theme === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('dravent-theme', theme); } catch (e) {}
+    this.setState({ theme }, () => this.applyTheme());
+  }
+
+  openMenu() { document.body.style.overflow = 'hidden'; this.setState({ menu: true }, () => { const b = this.q('[data-menu-close]'); if (b) b.focus(); }); }
+  closeMenu() { document.body.style.overflow = ''; this.setState({ menu: false }); }
+
+  scroll() {
+    const y = window.scrollY, vh = window.innerHeight;
+    const h = this.q('[data-hdr]');
+    if (h) {
+      const s = y > 40;
+      h.style.backgroundColor = s ? 'var(--glass)' : 'transparent';
+      h.style.backdropFilter = h.style.webkitBackdropFilter = s ? 'blur(14px) saturate(140%)' : 'none';
+      h.style.borderBottomColor = s ? 'var(--border)' : 'transparent';
+      if (Math.abs(y - this.lastY) > 4) h.style.transform = (y > this.lastY && y > 320 && !this.state.menu) ? 'translateY(-100%)' : 'translateY(0)';
+    }
+    this.lastY = y;
+    const pr = this.q('[data-proc]');
+    if (pr) {
+      const r = pr.getBoundingClientRect();
+      const p = clamp((vh * 0.75 - r.top) / (r.height + vh * 0.2));
+      const f = this.q('[data-proc-fill]');
+      if (f) f.style.transform = this.state.narrow ? `scale(1, ${p})` : `scale(${p}, 1)`;
+      const lit = p <= 0.01 ? 0 : Math.min(5, Math.floor(p * 5) + 1);
+      if (lit !== this.state.lit) this.setState({ lit });
+    }
+    const foot = this.q('[data-footer]');
+    const m = this.state.narrow && y > vh * 0.8 && (!foot || foot.getBoundingClientRect().top > vh);
+    if (m !== this.state.mcta) this.setState({ mcta: m });
+  }
+
+  pointer(e) {
+    const t = e.target && e.target.closest ? e.target : null;
+    const spot = t && t.closest('[data-spot]');
+    if (this.spotEl && this.spotEl !== spot) this.spotEl.style.setProperty('--my', '-60%');
+    if (spot) { const r = spot.getBoundingClientRect(); spot.style.setProperty('--mx', (e.clientX - r.left) + 'px'); spot.style.setProperty('--my', (e.clientY - r.top) + 'px'); }
+    this.spotEl = spot;
+    const btn = t && t.closest('[data-btn]');
+    if (this.btnEl !== btn) {
+      if (this.btnEl) { const a = this.btnEl.querySelector('[data-arrow]'); if (a) a.style.transform = ''; }
+      if (btn) { const a = btn.querySelector('[data-arrow]'); if (a) a.style.transform = 'translateX(4px)'; }
+      this.btnEl = btn;
+    }
+    if (this.motion && !this.state.narrow) {
+      const mag = t && t.closest('[data-magnetic]');
+      if (this.magEl && this.magEl !== mag) this.magEl.style.transform = '';
+      if (mag) {
+        const r = mag.getBoundingClientRect();
+        mag.style.transform = `translate(${((e.clientX - (r.left + r.width / 2)) / (r.width / 2)) * 6}px, ${((e.clientY - (r.top + r.height / 2)) / (r.height / 2)) * 6}px)`;
+      }
+      this.magEl = mag;
+    }
+    const logo = t && t.closest('[data-logo]');
+    if (logo && logo !== this.logoEl) this.drawPaths([logo.querySelector('[data-logo-arrow]')], 400, 0);
+    this.logoEl = logo;
+  }
+
+  drawPaths(paths, dur, delay) {
+    if (!this.motion) return;
+    paths.forEach(p => {
+      if (!p) return;
+      const L = p.getTotalLength();
+      p.style.transition = 'none';
+      p.style.strokeDasharray = L;
+      p.style.strokeDashoffset = L;
+      p.getBoundingClientRect();
+      p.style.transition = `stroke-dashoffset ${dur}ms ${EASE} ${delay || 0}ms`;
+      p.style.strokeDashoffset = '0';
+    });
+  }
+
+  intro() {
+    if (!this.motion) return;
+    const logo = this.q('[data-hdr] [data-logo]');
+    if (logo) this.drawPaths([...logo.querySelectorAll('path')], 600, 0);
+    this.drawPaths([...document.querySelectorAll('[data-draw]')], 1100, 200);
+    const words = [...document.querySelectorAll('[data-w]')];
+    const tops = [];
+    words.forEach(w => { const top = Math.round(w.parentElement.offsetTop); if (!tops.includes(top)) tops.push(top); w._line = tops.indexOf(top); w.style.transform = 'translateY(110%)'; });
+    const intros = [...document.querySelectorAll('[data-intro]')];
+    const builds = [...document.querySelectorAll('[data-build]')];
+    intros.forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(14px)'; });
+    builds.forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(8px)'; });
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      words.forEach(w => { w.style.transition = `transform .9s ${EASE} ${250 + w._line * 80}ms`; w.style.transform = 'translateY(0)'; });
+      const base = 250 + tops.length * 80 + 150;
+      let k = 0;
+      intros.forEach(el => {
+        const beforeH1 = !!(el.compareDocumentPosition(this.q('h1')) & Node.DOCUMENT_POSITION_FOLLOWING);
+        const d = beforeH1 ? 100 : base + (k++) * 90;
+        el.style.transition = `opacity .7s ${EASE} ${d}ms, transform .7s ${EASE} ${d}ms`;
+        el.style.opacity = '1'; el.style.transform = 'translateY(0)';
+      });
+      builds.forEach((el, i) => {
+        const d = 700 + i * 80;
+        el.style.transition = `opacity .6s ${EASE} ${d}ms, transform .6s ${EASE} ${d}ms`;
+        el.style.opacity = '1'; el.style.transform = 'translateY(0)';
+      });
+    }));
+  }
+
+  setupReveal() {
+    if (!this.motion || !window.IntersectionObserver) return;
+    this.io = new IntersectionObserver(entries => entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      this.io.unobserve(en.target);
+      (en.target._kids || []).forEach((k, i) => {
+        const d = i * 90;
+        k.style.transition = `opacity .8s ${EASE} ${d}ms, transform .8s ${EASE} ${d}ms`;
+        k.style.opacity = '1'; k.style.transform = 'translateY(0)';
+        setTimeout(() => { k.style.transition = k._t0; k.style.transform = k._tf0; k.style.opacity = ''; }, 850 + d);
+      });
+    }), { rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+      if (el.getBoundingClientRect().top < window.innerHeight) return;
+      const kids = el.dataset.reveal === 'stagger' ? [...el.children] : [el];
+      kids.forEach(k => { k._t0 = k.style.transition; k._tf0 = k.style.transform; k.style.transition = 'none'; k.style.opacity = '0'; k.style.transform = 'translateY(28px)'; });
+      el._kids = kids;
+      this.io.observe(el);
+    });
+  }
+
+  startLoop() {
+    this.dots = [...document.querySelectorAll('[data-sig-dot]')].map(el => {
+      const p = document.getElementById(el.dataset.path);
+      return p ? { el, p, len: p.getTotalLength(), off: +el.dataset.off || 0, dur: +el.dataset.dur || 5000, root: el.closest('[data-sig-root]') } : null;
+    }).filter(Boolean);
+    this.rings = [...document.querySelectorAll('[data-ring]')];
+    this.grads = [...document.querySelectorAll('[data-grad-text]')];
+    this.visible = new Set();
+    this.vio = new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? this.visible.add(e.target) : this.visible.delete(e.target)));
+    document.querySelectorAll('[data-sig-root]').forEach(r => this.vio.observe(r));
+    const place = (now, force) => this.dots.forEach(d => {
+      if (!force && !this.visible.has(d.root)) return;
+      const t = ((now / d.dur) + d.off) % 1;
+      const pt = d.p.getPointAtLength(t * d.len);
+      d.el.setAttribute('transform', `translate(${pt.x.toFixed(1)} ${pt.y.toFixed(1)})`);
+      d.el.setAttribute('opacity', Math.min(1, Math.sin(Math.PI * t) * 2.2).toFixed(2));
+    });
+    if (!this.motion) { place(1500, true); return; }
+    const tick = now => {
+      this.lraf = requestAnimationFrame(tick);
+      if (document.hidden) return;
+      place(now);
+      const ph = (now % 2200) / 2200;
+      this.rings.forEach(r => { r.setAttribute('r', (8 + ph * 20).toFixed(1)); r.setAttribute('opacity', (1 - ph).toFixed(2)); });
+      this.grads.forEach(g => { g.style.backgroundPosition = `${((now / 8000) % 1) * 200}% 50%`; });
+    };
+    this.lraf = requestAnimationFrame(tick);
+  }
+
+  renderVals() {
+    const { narrow, lit, faq, theme, menu, mcta, adv } = this.state;
+    const v = {
+      wide: !narrow, narrow, menu,
+      isDark: theme !== 'light', isLight: theme === 'light',
+      grain: this.props.grain ?? true,
+      toggleTheme: () => this.toggleTheme(),
+      openMenu: () => this.openMenu(),
+      closeMenu: () => this.closeMenu(),
+      menuAria: menu ? 'true' : 'false',
+      plTop: narrow ? '0' : '7px', plRight: narrow ? 'auto' : '0', plBottom: narrow ? '0' : 'auto',
+      plW: narrow ? '1px' : 'auto', plH: narrow ? 'auto' : '1px',
+      procCols: narrow ? '1fr' : 'repeat(5, minmax(0, 1fr))',
+      procGap: narrow ? '36px' : '24px',
+      procPad: narrow ? '0 0 0 44px' : '44px 8px 0 0',
+      popOrder: narrow ? -1 : 0,
+      mctaTf: mcta ? 'translateY(0)' : 'translateY(120%)',
+      mctaHidden: mcta ? 'false' : 'true',
+      mctaTab: mcta ? 0 : -1,
+      year: new Date().getFullYear()
+    };
+    for (let i = 0; i < 5; i++) {
+      const l = lit > i;
+      v['pb' + i] = l ? 'var(--accent)' : 'var(--border-strong)';
+      v['pf' + i] = l ? 'var(--accent)' : 'var(--bg)';
+      v['pg' + i] = l ? '0 0 0 5px rgba(46,230,197,.14), 0 0 18px rgba(46,230,197,.45)' : 'none';
+    }
+    for (let i = 0; i < 6; i++) {
+      const open = faq === i;
+      v['f' + i] = open;
+      v['fa' + i] = open ? 'true' : 'false';
+      v['fr' + i] = open ? 'rotate(45deg)' : 'rotate(0deg)';
+      v['tf' + i] = () => this.setState(s => ({ faq: s.faq === i ? -1 : i }));
+    }
+    for (let i = 0; i < 8; i++) {
+      const open = !!adv[i];
+      v['a' + i] = open;
+      v['aa' + i] = open ? 'true' : 'false';
+      v['ar' + i] = open ? 'rotate(180deg)' : 'rotate(0deg)';
+      v['ta' + i] = () => this.setState(s => ({ adv: Object.assign({}, s.adv, { [i]: !s.adv[i] }) }));
+    }
+    return v;
+  }
+}
+</script>
+</body>
+</html>
